@@ -2,7 +2,7 @@
   <div id="app">
     <!-- We deleted all of the default stuff in this div and added the following code -->
     <h1>Example of Webpack Simple</h1>
-    <light />
+    <light v-on:lightClicked="catchLight" />
   </div>
 </template>
 
@@ -19,6 +19,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    catchLight: function(color) {
+      alert('light was clicked...' + color)
     }
   }
 }

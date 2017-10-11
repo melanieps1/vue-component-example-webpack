@@ -12,7 +12,7 @@
 		methods: {
 			reportClickToParent: function(colorClicked) {
 				// We are emitting an event and passing `colorClicked`
-				this.$emit(colorClicked);
+				this.$emit('bulbClicked', colorClicked);
 			}
 		}
 	}
